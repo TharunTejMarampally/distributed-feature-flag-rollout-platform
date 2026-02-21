@@ -17,9 +17,15 @@ public class AdminController {
     public AdminController(AdminService adminService) {
         this.adminService = adminService;
     }
+
     @PostMapping("/create")
     public ResponseEntity<Flag> createFlag(@RequestBody Flag flag) {
         Flag response=adminService.createFlag(flag);
+        return ResponseEntity.ok(response);
+    }
+    @PostMapping("/update")
+    public ResponseEntity<Flag> updateFlag(@RequestBody Flag flag) {
+        Flag response=adminService.updateFlag(flag);
         return ResponseEntity.ok(response);
     }
 }

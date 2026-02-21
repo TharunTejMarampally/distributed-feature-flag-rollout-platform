@@ -6,6 +6,7 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.envers.Audited;
 import org.hibernate.type.SqlTypes;
 
 import java.util.Map;
@@ -15,6 +16,7 @@ import java.util.Map;
 @Getter
 @Entity
 @Table(name="flag")
+@Audited
 public class Flag extends AbstractEntity {
 
     @Column(name = "flag_name")
