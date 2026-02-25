@@ -21,8 +21,10 @@ public class Flag extends AbstractEntity {
 
     @Column(name = "flag_name")
     private String flagName;
+
     @Column(name = "enabled")
     private boolean enabled;
+
     @Column(name = "roll_out_percentage")
     private double rollOutPercentage;
 
