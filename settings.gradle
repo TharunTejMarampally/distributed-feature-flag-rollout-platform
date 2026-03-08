@@ -1,3 +1,4 @@
 rootProject.name = 'distributed-feature-flag'
 
 include("admin-service")
+include("flag-service")

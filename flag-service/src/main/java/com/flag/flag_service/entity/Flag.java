@@ -1,4 +1,4 @@
-package com.admin.service.entities;
+package com.flag.flag_service.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
